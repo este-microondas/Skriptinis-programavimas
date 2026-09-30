@@ -50,10 +50,6 @@ grid on
 
 
 
-clc;
-clear;
-close all;
-
 A = 7;
 f = 4;
 sigma = 2;

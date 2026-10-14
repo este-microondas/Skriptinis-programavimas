@@ -10,8 +10,5 @@ if nargout == 0
     title('Sin ir Cos');
 elseif nargout == 1
     varargout{1} = [s; c];
-elseif nargout == 2
-    varargout{1} = s;
-    varargout{2} = c;
 end
 end

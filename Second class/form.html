@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Drive Form</title>
+</head>
+<body>
+    <h1>Book a test drive</h1>
+
+    <form>
+        <fieldset>
+            <legend>Car</legend>
+
+            <label>Model</label>
+            <select name="model">
+                <option>Toyota Corolla</option>
+                <option>Toyota Camry</option>
+                <option>Toyota RAV4</option>
+            </select>
+
+            <fieldset>
+                <legend>Engine</legend>
+
+                <input type="radio" name="engine" value="petrol" checked>Petrol
+                <input type="radio" name="engine" value="hybrid">Hybrid
+                <input type="radio" name="engine" value="electric">Electric
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras to try</legend>
+
+                <input type="checkbox" name="cruise">Cruise control
+                <input type="checkbox" name="parking">Parking assistant
+                <input type="checkbox" name="seat">Child seat
+            </fieldset>
+
+            <label>Budget (5 000 - 50 000 €)</label>
+            <input type="range" name="budget"
+                   min="5000" max="50000" step="1000">
+        </fieldset>
+
+        <fieldset>
+            <legend>Test drive</legend>
+
+            <label>Date</label>
+            <input type="date" name="date">
+            <br>
+
+            <label>Time (9:00 - 18:00)</label>
+            <input type="time" name="time"
+                   min="09:00" max="18:00">
+        </fieldset>
+
+        <fieldset>
+            <legend>About you</legend>
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+            <br>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <br>
+
+            <label>Driving licence since (year)</label>
+            <input type="number" name="licence"
+                   min="1950" max="2026">
+            <br>
+
+            <label>Anything else?</label>
+            <textarea name="message" rows="4" cols="25"></textarea>
+            <br>
+
+            <input type="checkbox" name="terms" required>
+            <label>I agree to the terms</label>
+        </fieldset>
+
+        <button type="submit">Book a test drive</button>
+    </form>
+</body>
+</html>
